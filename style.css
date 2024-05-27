@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body#main {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fae894;
+}
+
+body#story {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+body#more-charactor {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #2e2d2b;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+nav > div > a > img {
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+nav > div > a {
+  color: #fae894;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  font-family: "Marker Felt", fantasy;
+  font-weight: bold;
+  font-size: large;
+  padding-left: 20px;
+  text-shadow: 1px 1px black;
+}
+
+.menu-div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.menu-button {
+  background-color: #2e2d2b;
+  color: #fae894;
+  font-size: x-large;
+  padding-top: 15%;
+  padding-right: 50px;
+}
+
+.menu-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 170px;
+  background-color: #2e2d2b;
+  border-radius: 20px;
+  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-content a {
+  color: white;
+  padding: 10px;
+  display: block;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.menu-div:hover .menu-content {
+  display: block;
+}
+
+.menu-content a:hover {
+  background-color: #191919;
+  color: #fae894;
+  border-radius: 20px;
+}
+
+.main-image {
+  width: 100%;
+}
+
+div#text1 {
+  background-image: linear-gradient(to bottom, #fae894, #445f8c);
+  color: #2e2d2b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+.main-head {
+  margin-bottom: 10px;
+  font-size: xxx-large;
+  font-family: "Apple Chancery", cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+div#text1 > div > p {
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+td > a,
+.char-item > a {
+  color: #2e2d2b;
+}
+
+td > a:hover,
+.char-item > a:hover {
+  color: #609ace;
+}
+
+div#tale {
+  background-image: linear-gradient(to bottom, #445f8c, #222d5a);
+  display: flex;
+}
+
+div#tale > div {
+  flex: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 30px;
+}
+
+.tale-link > img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tale-link > img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sun-story {
+  background-image: url("image/sun_bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+#moon-story {
+  background-image: url("image/moon_bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-sqaure-sun {
+  background-color: rgba(238, 146, 47, 0.5);
+  padding: 30px;
+  border: 2px dashed black;
+  border-radius: 100px;
+  border-color: black;
+  max-width: 700px;
+  text-align: center;
+}
+
+.text-sqaure-moon {
+  background-color: rgba(150, 150, 150, 0.5);
+  padding: 30px;
+  border: 2px dashed black;
+  border-radius: 100px;
+  border-color: black;
+  max-width: 700px;
+  text-align: center;
+}
+
+.text-sqaure-sun p,
+.text-sqaure-moon p {
+  margin-bottom: 10px;
+  font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: left;
+  text-indent: 2cap;
+}
+
+.next-story-container {
+  background-color: black;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.next-story {
+  background-color: #2e2d2b;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 50px;
+  border-color: white;
+}
+
+.next-story a {
+  font-family: "Gill Sans", sans-serif;
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.next-story a:hover {
+  color: #fae894;
+}
+
+.next-story:hover {
+  background-color: #191919;
+  border-color: #fae894;
+}
+
+video {
+  width: 100%;
+}
+
+.more-charactor-container {
+  background-image: url("image/char_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  text-align: left;
+}
+
+.character-head {
+  margin-bottom: 10px;
+  font-size: xxx-large;
+  font-family: "Apple Chancery", cursive;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #ea5268;
+  color: #fffdd0;
+}
+
+.char-list {
+  font-size: x-large;
+  font-family: "American Typewriter", serif;
+  color: #fffdd0;
+  text-shadow: 3px 3px 3px #ea5268;
+}
+
+.char-item {
+  padding: 10px;
+}
+
+.char-item > a {
+  color: #fffdd0;
+  text-shadow: 3px 3px 3px #ea5268;
+}
+
+.more-button-container {
+  background-color: #222d5a;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-button {
+  background-color: #222d5a;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 50px;
+  border-color: white;
+}
+
+.more-button a {
+  font-family: "Gill Sans", sans-serif;
+  font-size: x-large;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.more-button a:hover {
+  color: #fae894;
+}
+
+.more-button:hover {
+  background-color: #091b34;
+  border-color: #fae894;
+}
+
+.select-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: xx-large;
+  font-family: "Apple Chancery", cursive;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px #ea5268;
+  color: #fffdd0;
+}
+
+.more-charactor-container select {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #fffdd0;
+  text-align: center;
+  border: 2px solid;
+  padding: 10px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
